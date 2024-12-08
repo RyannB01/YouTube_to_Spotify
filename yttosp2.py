@@ -93,14 +93,14 @@ def add_tracks_to_playlist(playlist_id, track_titles):
 
 # Spotify Authentication
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
-    client_id="f824633f0c5447fd82dcc332946caecc",  # Replace with your actual Client ID
-    client_secret="9008c36618b84b788fb2edfe7e6e5786",  # Replace with your actual Client Secret
+    client_id="",  # Replace with your actual Client ID
+    client_secret="",  # Replace with your actual Client Secret
     redirect_uri="http://localhost:8888/callback",  # Make sure this matches your Redirect URI
     scope=["playlist-modify-public", "playlist-modify-private", "user-library-read"]))
 
 # Get YouTube playlist videos
-youtube_api_key = "AIzaSyCwb2r-lZRN9SQ0FjCwwhYrbbZ43DRWJMA"  # Replace with your YouTube API key
-youtube_playlist_id = "PL3I7bnRg5I-h7nPRwe7O1VA9bPgH0e4Rc"  # Replace with your YouTube playlist ID
+youtube_api_key = ""  # Replace with your YouTube API key
+youtube_playlist_id = ""  # Replace with your YouTube playlist ID
 
 videos = get_playlist_videos(youtube_playlist_id, youtube_api_key)
 
